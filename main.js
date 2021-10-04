@@ -6,9 +6,8 @@ if(!Number.isInteger(n) || !Number.isInteger(m)){
     
 }else{
     const skipPairs = confirm('Пропускати парні?');
-    document.location.reload()
     let result = null;
-    for(const i = n; i <= m; ++i){
+    for(let i = n; i <= m; ++i){
         if(skipPairs && !(i % 2)){
             continue;  
         }
